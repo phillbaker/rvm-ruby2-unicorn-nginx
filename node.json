@@ -1,0 +1,20 @@
+{
+  "user": {
+    "name": "deployer",
+    "password": "password"
+  },
+  "server_name": "example.com",
+  "app_name": "example",
+  "deploy_to": "/var/www/example-app",
+  "ruby-version": "2.0.0-p247",
+  "run_list": [
+    "recipe[vim]",
+    "recipe[imagemagick]",
+    "recipe[redis::source]",
+    "recipe[memcached]",
+    "recipe[ruby_build]",
+    "recipe[rbenv::system]",
+    "recipe[nginx]",
+    "recipe[main]"
+  ]
+}

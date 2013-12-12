@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'nginx'
+cookbook 'imagemagick'
+cookbook 'vim'
+cookbook 'rbenv', :git => 'git://github.com/fnichol/chef-rbenv.git'
+cookbook 'ruby_build', :git => 'git://github.com/fnichol/chef-ruby_build.git'
+cookbook 'redis', :git => 'git://github.com/cassianoleal/chef-redis.git'
+cookbook 'memcached'
+
+#cookbook 'libqt4', :git => 'https://github.com/phlipper/chef-libqt4'
+#cookbook 'runit'
+#cookbook 'java'
+#cookbook 'nodejs'
